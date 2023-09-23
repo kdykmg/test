@@ -12,7 +12,7 @@ arr_helmet = []
 arr_nonhelmet = []
 
 model = YOLO("yolov8n.yaml")  # YOLO 모델 생성
-model = YOLO("test_helmet.pt")  # 미리 학습된 모델 로드 
+model = YOLO('train_openvino_model/')  # 미리 학습된 모델 로드 
 
 #result=model('https://img.etnews.com/photonews/2005/1305244_20200529132431_661_0001.jpg',conf=0.3)  #이미지에서 객체 검출
 result=model('https://health.chosun.com/site/data/img_dir/2022/06/13/2022061300830_0.jpg',conf=0.3)
